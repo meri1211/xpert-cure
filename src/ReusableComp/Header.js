@@ -1,11 +1,13 @@
 // Header.js
-import React from 'react';
+import React from "react";
+import Nav from "./Nav";
+import NotificationAndProfile from "./NotificationAndProfile";
 
-const Header = () => {
+const Header = ({ navItems }) => {
   return (
     <header>
-      <h1>My App</h1>
-      {/* Add other header content */}
+      <Nav items={navItems} />
+      <NotificationAndProfile />
     </header>
   );
 };
