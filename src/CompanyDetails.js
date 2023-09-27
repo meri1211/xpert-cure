@@ -1,6 +1,7 @@
 // CompanyDetails.js
-import React from "react";
-import { useHistory } from "react-router-dom";
+//import React from "react";
+//import { useHistory } from "react-router-dom";
+import React, { useState } from "react";
 import Nav from "./Nav";
 import Header from "./Header";
 import NotificationAndProfile from "./NotificationAndProfile";
