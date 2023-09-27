@@ -22,7 +22,7 @@ const CompanyDetails = () => {
   ];
 
   return (
-    <div className="main-container">
+    <div className="main-container" style={{width: '100%', height: '100%', position: 'relative', background: 'white'}}>
       <Header>
         <Nav items={companyDetailsItems} /> {/* Pass the items prop */}
         <NotificationAndProfile />
