@@ -7,10 +7,17 @@ import Aside from "./Aside";
 import SaveButton from "./SaveButton";
 
 const CompanyDetails = () => {
-  const companyDetailsItems = [
-    "New Admission",
-    "Company Details",
-  ]; /* Array of items for the Company Details Nav page(Nav li items)*/
+  /* Array of items for the Company Details Nav page(Nav li items)*/
+  const companyDetailsItems = ["New Admission", "Company Details"];
+  const [selectedTitle, setSelectedTitle] = useState("");
+  const titles = [
+    "Dashboard",
+    "New admission",
+    "Individual",
+    "Corporate",
+    "Application",
+    "Status roles",
+  ];
 
   return (
     <div classname="main-container">
@@ -18,7 +25,11 @@ const CompanyDetails = () => {
         <Nav items={companyDetailsItems} /> {/* Pass the items prop */}
         <NotificationAndProfile />
       </Header>
-      <Aside />
+      <Aside
+        titles={titles}
+        selectedTitle={selectedTitle}
+        onSelectTitle={setSelectedTitle}
+      />
       <SaveButton />
     </div>
   );
