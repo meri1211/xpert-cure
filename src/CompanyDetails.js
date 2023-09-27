@@ -11,7 +11,7 @@ import SaveButton from "./SaveButton";
 const CompanyDetails = () => {
   /* Array of items for the Company Details Nav page(Nav li items)*/
   const companyDetailsItems = ["New Admission", "Company Details"];
-  const [selectedTitle, setSelectedTitle] = useState("");
+  /*const [selectedTitle, setSelectedTitle] = useState("");
   const titles = [
     "Dashboard",
     "New admission",
@@ -19,7 +19,7 @@ const CompanyDetails = () => {
     "Corporate",
     "Application",
     "Status roles",
-  ];
+  ];*/
 
   return (
     <div className="main-container" style={{width: '100%', height: '100%', position: 'relative', background: 'white'}}>
@@ -28,9 +28,9 @@ const CompanyDetails = () => {
         <NotificationAndProfile />
       </Header>
       <Aside
-        titles={titles}
+        /*titles={titles}
         selectedTitle={selectedTitle}
-        onSelectTitle={setSelectedTitle}
+        onSelectTitle={setSelectedTitle}*/
       />
       <SaveButton />
     </div>

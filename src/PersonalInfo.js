@@ -5,7 +5,7 @@ import Nav from "./Nav";
 import Header from "./Header";
 import NotificationAndProfile from "./NotificationAndProfile";
 import Aside from "./Aside";
-import { useHistory } from "react-router-dom";
+//import { useHistory } from "react-router-dom";
 import SaveButton from "./SaveButton";
 import { Link } from "react-router-dom";
 
@@ -16,7 +16,7 @@ const PersonalInfo = () => {
     "Add individual",
     "Medical declaration",
   ];
-  const [selectedTitle, setSelectedTitle] = useState("");
+  /*const [selectedTitle, setSelectedTitle] = useState("");- tried to give props for the dashboard titles but it's not rendering so decided to just go with li
   const titles = [
     "Dashboard",
     "New admission",
@@ -24,7 +24,7 @@ const PersonalInfo = () => {
     "Corporate",
     "Application",
     "Status roles",
-  ];
+  ];*/
   const handleSaveAndContinue = () => {
     // Redirect to the CompanyDetails page
     history.push("/company");
@@ -37,9 +37,9 @@ const PersonalInfo = () => {
         <NotificationAndProfile />
       </Header>
       <Aside
-        titles={titles}
+        /*titles={titles}
         selectedTitle={selectedTitle}
-        onSelectTitle={setSelectedTitle}
+        onSelectTitle={setSelectedTitle}*/
       />
       <Link to="/company">
         <SaveButton onClickCallback={handleSaveAndContinue} />
