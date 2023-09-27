@@ -1,8 +1,9 @@
 // CompanyDetails.js
 import React from "react";
+import { useHistory } from "react-router-dom";
 import Nav from "./Nav";
 import Header from "./Header";
-import NotificationAndProfile from "./ReusableComp/NotificationAndProfile";
+import NotificationAndProfile from "./NotificationAndProfile";
 import Aside from "./Aside";
 import SaveButton from "./SaveButton";
 
@@ -20,7 +21,7 @@ const CompanyDetails = () => {
   ];
 
   return (
-    <div classname="main-container">
+    <div className="main-container">
       <Header>
         <Nav items={companyDetailsItems} /> {/* Pass the items prop */}
         <NotificationAndProfile />
