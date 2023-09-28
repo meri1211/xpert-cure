@@ -22,17 +22,30 @@ const CompanyDetails = () => {
   ];*/
 
   return (
-    <div className="main-container" style={{width: '100%', height: '100%', position: 'relative', background: 'white'}}>
-      <Header>
-        <Nav items={companyDetailsItems} /> {/* Pass the items prop */}
-        <NotificationAndProfile />
-      </Header>
-      <Aside
+    <div
+      className="main-container"
+      style={{
+        width: "100%",
+        height: "100%",
+        position: "relative",
+        background: "white",
+      }}
+    >
+      <div
+        className="formDiv"
+        style={{ width: "1440px", height: "1024px", background: "white" }}
+      >
+        <Header>
+          <Nav items={companyDetailsItems} /> {/* Pass the items prop */}
+          <NotificationAndProfile />
+        </Header>
+        <Aside
         /*titles={titles}
         selectedTitle={selectedTitle}
         onSelectTitle={setSelectedTitle}*/
-      />
-      <SaveButton />
+        />
+        <SaveButton />
+      </div>
     </div>
   );
 };

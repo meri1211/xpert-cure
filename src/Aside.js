@@ -19,7 +19,7 @@ const Aside = () => {
        <li>Application</li>
         <img src="dashIcon.png" alt="Application"/> 
        <li>Status roles</li>
-       <img src="dashIcon.png" alt="Status roles"/> 
+        <img src="dashIcon.png" alt="Status roles"/> 
       </ul>
     </aside>
   );
