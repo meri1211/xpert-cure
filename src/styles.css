@@ -1,0 +1,54 @@
+/*styling the Aside component*/
+.aside {
+  display: flex;
+  flex-direction: column;
+  width: 256px;
+  height: 1024px;
+  background: #5f799e;
+  border: 1px solid #000;
+  align-items: center;
+}
+/*styling the main container*/
+.main-container {
+  width: 1440px;
+  height: 1024px;
+  background: #fff;
+}
+
+/*styling the formDiv from Personal details page and the formPersonal that holds the questions*/
+.formDivPersonal {
+  width: 1140px;
+  height: 810px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #f6f7fb;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.formPersonal {
+  width: 1081px;
+  height: 649px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+/*styling the formDiv from Company details page and the formCompany that holds the questions*/
+.formDivCompany {
+  width: 1161px;
+  height: 899px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #f6f7fb;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.formCompany {
+  width: 1081px;
+  height: 817px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+}

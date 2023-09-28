@@ -5,6 +5,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import PersonalInfo from "./PersonalInfo"; // Import the PersonalInfo component
 import CompanyDetails from "./CompanyDetails"; // Import the CompanyDetails component
+import './styles.css'
 
 
 const App = () => {

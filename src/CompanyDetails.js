@@ -7,6 +7,8 @@ import Header from "./Header";
 import NotificationAndProfile from "./NotificationAndProfile";
 import Aside from "./Aside";
 import SaveButton from "./SaveButton";
+import "./styles.css";
+import "./App.css";
 
 const CompanyDetails = () => {
   /* Array of items for the Company Details Nav page(Nav li items)*/
@@ -22,29 +24,20 @@ const CompanyDetails = () => {
   ];*/
 
   return (
-    <div
-      className="main-container"
-      style={{
-        width: "100%",
-        height: "100%",
-        position: "relative",
-        background: "white",
-      }}
-    >
-      <div
-        className="formDiv"
-        style={{ width: "1440px", height: "1024px", background: "white" }}
-      >
-        <Header>
-          <Nav items={companyDetailsItems} /> {/* Pass the items prop */}
-          <NotificationAndProfile />
-        </Header>
-        <Aside
-        /*titles={titles}
+    <div className="main-container">
+      <Header>
+        <Nav items={companyDetailsItems} /> {/* Pass the items prop */}
+        <NotificationAndProfile />
+      </Header>
+      <Aside
+      /*titles={titles}
         selectedTitle={selectedTitle}
         onSelectTitle={setSelectedTitle}*/
-        />
-        <SaveButton />
+      />
+      <div className="formDivCompany">
+        <form className="formCompany">
+          <SaveButton />
+        </form>
       </div>
     </div>
   );
