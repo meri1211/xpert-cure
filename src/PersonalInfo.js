@@ -24,11 +24,30 @@ const PersonalInfo = () => {
       </Header>
       <Aside />
       <div className="formDivPersonal">
+        <h1>Medical declaration</h1>
         <form className="formPersonal">
-          <Link to="/company">
-            <SaveButton />
-          </Link>
+          <div className="questionSet">
+            <p>Does the pacient drink alcohol?</p>
+            <label>
+              <input type="radio" name="answer" value="yes" /> Yes
+            </label>
+            <label>
+              <input type="radio" name="answer" value="no" /> No
+            </label>
+            <p>How many times a week?</p>
+            <label>
+              Select an option:
+              <select>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+              </select>
+            </label>
+          </div>
         </form>
+        <Link to="/company">
+          <SaveButton />
+        </Link>
       </div>
     </div>
   );

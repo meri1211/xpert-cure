@@ -36,8 +36,9 @@ const CompanyDetails = () => {
       />
       <div className="formDivCompany">
         <form className="formCompany">
-          <SaveButton />
+          
         </form>
+        <SaveButton />
       </div>
     </div>
   );
