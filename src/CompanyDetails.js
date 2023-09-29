@@ -9,6 +9,7 @@ import Aside from "./Aside";
 import SaveButton from "./SaveButton";
 import "./styles.css";
 import "./App.css";
+import CompanyDetailsForm from "./CompanyDetailsForm";
 
 const CompanyDetails = () => {
   /* Array of items for the Company Details Nav page(Nav li items)*/
@@ -26,7 +27,7 @@ const CompanyDetails = () => {
   return (
     <div className="main-container">
       <Header>
-        <Nav items={companyDetailsItems} /> {/* Pass the items prop */}
+        <Nav items={companyDetailsItems} />
         <NotificationAndProfile />
       </Header>
       <Aside
@@ -35,9 +36,7 @@ const CompanyDetails = () => {
         onSelectTitle={setSelectedTitle}*/
       />
       <div className="formDivCompany">
-        <form className="formCompany">
-          
-        </form>
+        <CompanyDetailsForm />
         <SaveButton />
       </div>
     </div>
