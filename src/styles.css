@@ -8,6 +8,23 @@
   border: 1px solid #000;
   align-items: center;
 }
+.files-icon img {
+  width: 14px;
+  height: 18.702px;
+  flex-shrink: 0;
+}
+.title-list li {
+  width: 128px;
+  height: 21px;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 /*styling the main container*/
 .main-container {
   width: 1440px;
