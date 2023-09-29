@@ -23,7 +23,7 @@ const PersonalInfo = () => {
         <Nav items={personalDetailsItems} />
         <NotificationAndProfile />
       </Header>
-      <Aside background="white-background" />
+      <Aside titlesWithBackground={["Dashboard"]} />
       <div className="formDivPersonal">
         <h1>Medical declaration</h1>
         <div className="formDivPersonal">

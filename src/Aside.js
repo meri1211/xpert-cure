@@ -1,7 +1,7 @@
 import React from "react";
 import './styles.css'
 
-const Aside = ({ background }) => {
+const Aside = ({ titlesWithBackground }) => {
   const arrowImageSrc = "arrowDash.png";
 
   const titles = [
@@ -14,10 +14,10 @@ const Aside = ({ background }) => {
   ];
 
   return (
-    <aside className={`aside ${background}`}>
+    <aside className="aside">
       <div className="files-icon">
         {titles.map((item, index) => (
-          <div key={index}>
+          <div key={index} className={titlesWithBackground.includes(item.title) ? 'with-background' : ''}>
             <img src={arrowImageSrc} alt="Arrow Icon" />
             <img src="dashIcon.png" alt={item.altText} />
           </div>
@@ -25,7 +25,9 @@ const Aside = ({ background }) => {
       </div>
       <ul className="title-list">
         {titles.map((item, index) => (
-          <li key={index}>{item.title}</li>
+          <li key={index} className={titlesWithBackground.includes(item.title) ? 'with-background' : ''}>
+            {item.title}
+          </li>
         ))}
       </ul>
     </aside>

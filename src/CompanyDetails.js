@@ -31,7 +31,7 @@ const CompanyDetails = () => {
         <NotificationAndProfile />
       </Header>
       <Aside
-        background="blue-background"
+        titlesWithBackground={["New admission"]}
         /*titles={titles}
         selectedTitle={selectedTitle}
         onSelectTitle={setSelectedTitle}*/
