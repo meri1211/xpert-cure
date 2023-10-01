@@ -2,9 +2,9 @@
 import React from 'react';
 import "./styles.css";
 
-const SaveButton = ({ onClickCallback }) => {
+const SaveButton = () => {
   return (
-    <button onClick={onClickCallback}>Save and Next</button>
+    <button>Save and Next</button>
   );
 };
 

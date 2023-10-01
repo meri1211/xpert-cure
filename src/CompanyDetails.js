@@ -10,6 +10,7 @@ import SaveButton from "./SaveButton";
 import "./styles.css";
 import "./App.css";
 import CompanyDetailsForm from "./CompanyDetailsForm";
+import SaveButton from "./SaveButton";
 
 const CompanyDetails = () => {
   /* Array of items for the Company Details Nav page(Nav li items)*/
