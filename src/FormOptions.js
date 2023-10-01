@@ -1,4 +1,4 @@
-// FormOptions.js- adding questions and answer options to the form.
+// FormOptions.js- adding questions and answer options to the form of Personal Details
 import React, { useState } from "react";
 import QuestionSet from "./QuestionSet"; // Import the QuestionSet component
 

@@ -1,6 +1,7 @@
 // creating a question set component that i will import into a form component
 // QuestionSet.js
 import React from "react";
+import "./styles.css"
 
 const QuestionSet = ({ yesNoQuestion, dropdownQuestion, options }) => {
   return (

@@ -24,6 +24,15 @@
   font-weight: 400;
   line-height: normal;
 }
+/* targets titles with white background (Dashboard) */
+.aside.white-background .title-list li {
+  background-color: white;
+}
+
+/* targets titles with blue background ( New Admission) */
+.aside.blue-background .title-list li {
+  background-color: rgba(255, 255, 255, 0.3);
+}
 
 /*styling the main container*/
 .main-container {
@@ -68,4 +77,14 @@
   border-radius: 20px;
   background: #fff;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+/*styling the Save and Next button*/
+
+button {
+  width: 232px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #5f799e;
 }

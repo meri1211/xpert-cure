@@ -1,5 +1,6 @@
-// form component for the company details page
+// form component for the company details page consisting of the inputs
 import React, { useState } from "react";
+import "./styles.css"
 
 const CompanyDetailsForm = () => {
   const [formData, setFormData] = useState({

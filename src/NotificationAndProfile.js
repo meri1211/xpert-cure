@@ -12,7 +12,7 @@ const NotificationAndProfile = () => {
       </div>
       <div className="profile">
         <img
-          src="userPhoto.jpg"
+          src="./userPhoto.jpg"
           alt="User Profile"
           className="profile-image"
         />

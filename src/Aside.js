@@ -1,8 +1,9 @@
+// Aside component that renders the dashboard titles along with the icons
 import React from "react";
-import './styles.css'
+import "./styles.css";
 
 const Aside = ({ titlesWithBackground }) => {
-  const arrowImageSrc = "arrowDash.png";
+  const arrowImageSrc = "./arrowDash.png";
 
   const titles = [
     { title: "Dashboard", altText: "Dashboard Icon" },
@@ -17,15 +18,25 @@ const Aside = ({ titlesWithBackground }) => {
     <aside className="aside">
       <div className="files-icon">
         {titles.map((item, index) => (
-          <div key={index} className={titlesWithBackground.includes(item.title) ? 'with-background' : ''}>
+          <div
+            key={index}
+            className={
+              titlesWithBackground.includes(item.title) ? "with-background" : ""
+            }
+          >
             <img src={arrowImageSrc} alt="Arrow Icon" />
-            <img src="dashIcon.png" alt={item.altText} />
+            <img src="./dashIcon.png" alt={item.altText} />
           </div>
         ))}
       </div>
       <ul className="title-list">
         {titles.map((item, index) => (
-          <li key={index} className={titlesWithBackground.includes(item.title) ? 'with-background' : ''}>
+          <li
+            key={index}
+            className={
+              titlesWithBackground.includes(item.title) ? "with-background" : ""
+            }
+          >
             {item.title}
           </li>
         ))}
