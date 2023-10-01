@@ -8,8 +8,8 @@
 header {
   width: 1191px;
   display: flex;
-  align-items:center;
-  justify-content:space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /*styling the formDiv from Personal details page and the formPersonal that holds the questions*/
@@ -51,6 +51,7 @@ header {
 }
 
 /*styling the Aside component*/
+
 .aside {
   display: flex;
   flex-direction: column;
@@ -59,6 +60,14 @@ header {
   background: #5f799e;
   border: 1px solid #000;
   align-items: center;
+}
+
+/*logo*/
+logo {
+  width: 180px;
+  height: 32.632px;
+  flex-shrink: 0;
+  border-radius: 13px;
 }
 .files-icon img {
   width: 14px;
@@ -85,7 +94,6 @@ header {
 .aside.blue-background .title-list li {
   background-color: rgba(255, 255, 255, 0.3);
 }
-
 
 /*styling the Save and Next button*/
 
