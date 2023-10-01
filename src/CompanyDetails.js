@@ -39,7 +39,9 @@ const CompanyDetails = () => {
       />
       <div className="formDivCompany">
         <CompanyDetailsForm />
+        <Link to="/personal">
         <SaveButton />
+        </Link>
       </div>
     </div>
   );

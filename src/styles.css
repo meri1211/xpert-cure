@@ -1,44 +1,15 @@
-/*styling the Aside component*/
-.aside {
-  display: flex;
-  flex-direction: column;
-  width: 256px;
-  height: 1024px;
-  background: #5f799e;
-  border: 1px solid #000;
-  align-items: center;
-}
-.files-icon img {
-  width: 14px;
-  height: 18.702px;
-  flex-shrink: 0;
-}
-.title-list li {
-  width: 128px;
-  height: 21px;
-  flex-shrink: 0;
-  color: #fff;
-  font-family: Poppins;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-/* targets titles with white background (Dashboard) */
-.aside.white-background .title-list li {
-  background-color: white;
-}
-
-/* targets titles with blue background ( New Admission) */
-.aside.blue-background .title-list li {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
 /*styling the main container*/
 .main-container {
   width: 1440px;
   height: 1024px;
   background: #fff;
+}
+
+header {
+  width: 1191px;
+  display: flex;
+  align-items:center;
+  justify-content:space-between;
 }
 
 /*styling the formDiv from Personal details page and the formPersonal that holds the questions*/
@@ -78,6 +49,43 @@
   background: #fff;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
 }
+
+/*styling the Aside component*/
+.aside {
+  display: flex;
+  flex-direction: column;
+  width: 256px;
+  height: 1024px;
+  background: #5f799e;
+  border: 1px solid #000;
+  align-items: center;
+}
+.files-icon img {
+  width: 14px;
+  height: 18.702px;
+  flex-shrink: 0;
+}
+.title-list li {
+  width: 128px;
+  height: 21px;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+/* targets titles with white background (Dashboard) */
+.aside.white-background .title-list li {
+  background-color: white;
+}
+
+/* targets titles with blue background ( New Admission) */
+.aside.blue-background .title-list li {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
 
 /*styling the Save and Next button*/
 
