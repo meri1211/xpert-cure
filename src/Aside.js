@@ -13,9 +13,12 @@ const Aside = ({ titlesWithBackground }) => {
     { title: "Application", altText: "Application Icon" },
     { title: "Status roles", altText: "Status Roles Icon" },
   ];
-
+  
   return (
     <aside className="aside">
+      <div className="logo">
+        <img src="./XpertLogo.png" />
+      </div>
       <div className="files-icon">
         {titles.map((item, index) => (
           <div
